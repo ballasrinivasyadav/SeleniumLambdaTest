@@ -19,3 +19,6 @@ class DragDrop:
     def getSlider(self):
         slider = self.driver.find_element(*DragDrop.slid)
         ActionChains(self.driver).drag_and_drop_by_offset(slider, 105, 0).perform()
+
+    def getTwoScreenShot(self):
+        return self.driver.save_screenshot("Second.png")

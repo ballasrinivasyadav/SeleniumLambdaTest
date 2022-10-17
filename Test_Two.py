@@ -14,4 +14,7 @@ class TestTwo:
         # Drag&Drop Slider
         dragDrop.getSlider()
 
+        #ScreenShot
+        dragDrop.getTwoScreenShot()
+
 

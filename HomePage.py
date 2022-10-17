@@ -19,6 +19,9 @@ class HomePage:
     def setenter(self):
         return self.driver.find_element(*HomePage.enterMessage)
 
+    def getOneScreenShot(self):
+        return self.driver.save_screenshot("First.png")
+
                                     # Scenario 3
 
     form = (By.XPATH, "//a[normalize-space()='Input Form Submit']")
@@ -71,7 +74,12 @@ class HomePage:
     def getPincode(self):
         return self.driver.find_element(*HomePage.pincode).send_keys("500012")
 
+    def getThreeScreenShot(self):
+        return self.driver.save_screenshot("Three.png")
+
     def getSuccess(self):
         success = self.driver.find_element(By.XPATH, "//p[@class='success-msg hidden']").text
         assert "Thanks for contacting us, we will get back to you shortly" in success
         print(success)
+
+

@@ -46,5 +46,9 @@ class TestThree:
 
         home.getSuccess()
 
+        # #Screenshot
+        home.getThreeScreenShot()
+
+
 
 

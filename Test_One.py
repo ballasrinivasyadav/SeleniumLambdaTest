@@ -17,6 +17,11 @@ class TestOne:
         check = CheckoutPage(self.driver)
         check.getcheckoutpage().click()
 
+        # Get ScreenShot
+        simpleform.getOneScreenShot()
+
         message = check.getmessage()
         assert ("Welcome Lambda Test" in message)
         print(message)
+
+
